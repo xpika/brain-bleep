@@ -5,6 +5,7 @@ import Data.Tree
 import Data.Maybe
 import Control.Monad
 import Data.Char
+import System.IO
 
 data BrainBleepOp = 
    Program 
@@ -18,9 +19,9 @@ data BrainBleepOp =
  deriving (Show,Read)
  
 
-main = do 
- interpretBrainBleep 
-  "+++++\n+++++\n+++++\n+++++\n+++++\n+++++\n+++++\n+++++\n+++++\n+++.+.+.+.+.+.+.+.+.+.\n"
+main = do
+       x <- getContents
+       interpretBrainBleep x
 
 opDefs = [('+',Increment)
        ,('-' , Decrement)

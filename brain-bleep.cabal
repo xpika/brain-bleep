@@ -3,6 +3,7 @@ version: 0.1.0.1
 cabal-version: >=1.10
 build-type: Simple
 license: BSD3
+synopsis: primitive imperative language
 license-file: LICENSE
 maintainer: hawk.alan@gmail.com
 category: Language
